@@ -15,4 +15,8 @@ The code is as it. No guarantee to work. You should have the latest Internet bro
 
 ![Optional Text](../master/Screenshot.JPG)
 
+## Thanks
+Special thanks to StackOverflow, Mozilla Dev, W3Schools and Google search and more ... 
+
 Happy 
+27-May-2020 
