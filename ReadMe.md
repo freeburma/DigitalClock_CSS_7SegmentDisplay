@@ -13,4 +13,6 @@ the license as above.
 
 The code is as it. No guarantee to work. You should have the latest Internet browsers. Will not work on the old browser. 
 
+https://github.com/freeburma/DigitalClock_CSS_7SegmentDisplay/issues/1#issue-625286397
+
 Happy 
