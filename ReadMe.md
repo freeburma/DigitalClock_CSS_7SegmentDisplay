@@ -20,3 +20,6 @@ Special thanks to StackOverflow, Mozilla Dev, W3Schools and Google search and mo
 
 Happy 
 27-May-2020 
+
+GitHub: https://github.com/freeburma/DigitalClock_CSS_7SegmentDisplay
+

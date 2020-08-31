@@ -18,6 +18,7 @@ body
     background: #091921;
 }
 
+/* Seven Segments container */
 .sevenSegCon
 {
     width: 100%;
@@ -58,6 +59,7 @@ body
     
 }
 
+/* Segments a, g, d -> horizontals & 3 grid spaces   */
 .sevenSeg div:nth-child(1),
 .sevenSeg div:nth-child(5),
 .sevenSeg div:nth-child(9)
@@ -66,6 +68,7 @@ body
 
 }
 
+/* Segments f,e  -> vertical grid spaces   */
 .sevenSeg div:nth-child(2),
 .sevenSeg div:nth-child(6)
 {
@@ -77,6 +80,7 @@ body
     clip-path: polygon(53% 0, 0 20%, 0 80%, 57% 100%, 100% 79%, 100% 20%); */
 }
 
+/* Empty space middle rows */
 .sevenSeg div:nth-child(3),
 .sevenSeg div:nth-child(7)
 {
@@ -85,6 +89,7 @@ body
     width: 45px;
 }
 
+/* Segments b, c  -> vertical grid spaces   */
 .sevenSeg div:nth-child(4),
 .sevenSeg div:nth-child(8)
 {
@@ -92,6 +97,7 @@ body
     grid-row: span 2;
 }
 
+/* Horizontal segments */
 .segA, 
 .segG, 
 .segD
@@ -103,7 +109,7 @@ body
     clip-path: polygon(22% 0, 0% 53%, 23% 100%, 81% 100%, 100% 50%, 79% 0);
 }
 
-
+/* Vertical segments */
 .segB,
 .segC,
 .segE,
@@ -119,6 +125,7 @@ body
 
 } 
 
+/* Center dot container */
 .dot 
 {
     display: flex;
@@ -128,6 +135,7 @@ body
 
 }
 
+/* Center dot styling with light gray color */
 .dot span 
 {
     width: 20px;
