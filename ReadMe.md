@@ -22,4 +22,4 @@ Happy
 27-May-2020 
 
 GitHub: https://github.com/freeburma/DigitalClock_CSS_7SegmentDisplay
-
+CSS Clip Path Maker: https://bennettfeely.com/clippy/
