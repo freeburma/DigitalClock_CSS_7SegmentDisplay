@@ -34,19 +34,25 @@ body
 
 .sevenSeg
 {
-    /* width: 40px;
-    height: 40px; */
-/* 
+    /* 
+    width: 40px;
+    height: 40px; 
+    */
+    
+    /* 
     width: 100px;
-    height: 100px; */
+    height: 100px; 
+    */
 
     /* background: #ff0; */
 
     margin: 10px;
     display: grid;
 
-    /* grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto auto; */
+    /* 
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto; 
+    */
     
 }
 
@@ -58,6 +64,38 @@ body
   
     
 }
+
+
+
+/* Horizontal segments */
+.segA, 
+.segG, 
+.segD
+{
+    /* background: #f00; */
+    background: rgba(49, 49, 49, 0.5);
+    
+    width: 60px;
+    height: 20px;
+
+    clip-path: polygon(22% 0, 0% 53%, 23% 100%, 81% 100%, 100% 50%, 79% 0);
+}
+
+/* Vertical segments */
+.segB,
+.segC,
+.segE,
+.segF
+{
+    /* background: #f00; */
+    background: rgba(49, 49, 49, 0.5);
+
+    height: 85px;
+    width: 20px;
+    
+    clip-path: polygon(53% 0, 0 20%, 0 80%, 57% 100%, 100% 79%, 100% 20%); 
+
+} 
 
 /* Segments a, g, d -> horizontals & 3 grid spaces   */
 .sevenSeg div:nth-child(1),
@@ -74,10 +112,12 @@ body
 {
     /* background: #ff0; */
     grid-row: span 2;
-/* 
+    
+    /* 
     height: 100px;
     width: auto;
-    clip-path: polygon(53% 0, 0 20%, 0 80%, 57% 100%, 100% 79%, 100% 20%); */
+    clip-path: polygon(53% 0, 0 20%, 0 80%, 57% 100%, 100% 79%, 100% 20%); 
+    */
 }
 
 /* Empty space middle rows */
@@ -96,34 +136,6 @@ body
     /* background: rgb(3, 187, 243); */
     grid-row: span 2;
 }
-
-/* Horizontal segments */
-.segA, 
-.segG, 
-.segD
-{
-    /* background: #f00; */
-    background: rgba(49, 49, 49, 0.5);
-    width: 60px;
-    height: 20px;
-    clip-path: polygon(22% 0, 0% 53%, 23% 100%, 81% 100%, 100% 50%, 79% 0);
-}
-
-/* Vertical segments */
-.segB,
-.segC,
-.segE,
-.segF
-{
-    /* background: #f00; */
-    background: rgba(49, 49, 49, 0.5);
-
-
-    height: 85px;
-    width: 20px;
-    clip-path: polygon(53% 0, 0 20%, 0 80%, 57% 100%, 100% 79%, 100% 20%); 
-
-} 
 
 /* Center dot container */
 .dot 
