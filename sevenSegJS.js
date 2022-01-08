@@ -3,7 +3,10 @@ class SevenSegment
 {
     constructor(preFix)
     {
-        this.segA= document.querySelector(`.segA${preFix}`); 
+        /*
+            No space needed with 'QuerySelector' tag
+        */
+        this.segA = document.querySelector(`.segA${preFix}`); 
         this.segB = document.querySelector(`.segB${preFix}`); 
         this.segC = document.querySelector(`.segC${preFix}`); 
         this.segD = document.querySelector(`.segD${preFix}`); 
