@@ -37,8 +37,8 @@ body
 .segG, 
 .segD
 {
-    background: #f00;
-    /* background:  rgba(49, 49, 49, 0.5); */
+    /* background: #f00; */
+    background:  rgba(49, 49, 49, 0.5);
 
     width: 60px;
     height: 20px;
@@ -52,8 +52,8 @@ body
 .segE,
 .segF
 {
-    background: #f00;
-    /* background: rgba(49, 49, 49, 0.5); */
+    /* background: #f00; */
+    background: rgba(49, 49, 49, 0.5);
 
     height: 85px;
     width: 20px;

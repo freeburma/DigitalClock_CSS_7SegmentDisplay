@@ -11,24 +11,478 @@
     <!-- CSS Clip Path: https://bennettfeely.com/clippy/ -->
 </head>
 <body>
+    
     <div class="sevenSegCon">
+
         <div class="sevenSeg">
-            <div class="box"><div class="segA">a</div></div>
+            <div class="box"><div class="segA hr1">a</div></div>
 
-            <div class="box"><div class="segF">f</div></div>
+            <div class="box"><div class="segF hr1">f</div></div>
             <div class="box"></div>
-            <div class="box"><div class="segB">b</div></div>
+            <div class="box"><div class="segB hr1">b</div></div>
 
-            <div class="box"><div class="segG">g</div></div>
+            <div class="box"><div class="segG hr1">g</div></div>
 
-            <div class="box"><div class="segE">e</div></div>
+            <div class="box"><div class="segE hr1">e</div></div>
             <div class="box"></div>
-            <div class="box"><div class="segC">c</div></div>
+            <div class="box"><div class="segC hr1">c</div></div>
 
-            <div class="box"><div class="segD">d</div></div>
+            <div class="box"><div class="segD hr1">d</div></div>
         </div>
+
+        <div class="sevenSeg">
+            <div class="box"><div class="segA hr2">a</div></div>
+
+            <div class="box"><div class="segF hr2">f</div></div>
+            <div class="box"></div>
+            <div class="box"><div class="segB hr2">b</div></div>
+
+            <div class="box"><div class="segG hr2">g</div></div>
+
+            <div class="box"><div class="segE hr2">e</div></div>
+            <div class="box"></div>
+            <div class="box"><div class="segC hr2">c</div></div>
+
+            <div class="box"><div class="segD hr2">d</div></div>
+        </div>
+
+        
+       
+
+        <div class="sevenSeg">
+            <div class="box"><div class="segA mn1">a</div></div>
+
+            <div class="box"><div class="segF mn1">f</div></div>
+            <div class="box"></div>
+            <div class="box"><div class="segB mn1">b</div></div>
+
+            <div class="box"><div class="segG mn1">g</div></div>
+
+            <div class="box"><div class="segE mn1">e</div></div>
+            <div class="box"></div>
+            <div class="box"><div class="segC mn1">c</div></div>
+
+            <div class="box"><div class="segD mn1">d</div></div>
+        </div>
+
+        <div class="sevenSeg">
+            <div class="box"><div class="segA mn2">a</div></div>
+
+            <div class="box"><div class="segF mn2">f</div></div>
+            <div class="box"></div>
+            <div class="box"><div class="segB mn2">b</div></div>
+
+            <div class="box"><div class="segG mn2">g</div></div>
+
+            <div class="box"><div class="segE mn2">e</div></div>
+            <div class="box"></div>
+            <div class="box"><div class="segC mn2">c</div></div>
+
+            <div class="box"><div class="segD mn2">d</div></div>
+        </div>
+
+
+        
+
+
+        <div class="sevenSeg">
+            <div class="box"><div class="segA sec1">a</div></div>
+
+            <div class="box"><div class="segF sec1">f</div></div>
+            <div class="box"></div>
+            <div class="box"><div class="segB sec1">b</div></div>
+
+            <div class="box"><div class="segG sec1">g</div></div>
+
+            <div class="box"><div class="segE sec1">e</div></div>
+            <div class="box"></div>
+            <div class="box"><div class="segC sec1">c</div></div>
+
+            <div class="box"><div class="segD sec1">d</div></div>
+        </div>
+
+        <div class="sevenSeg">
+            <div class="box"><div class="segA sec2">a</div></div>
+
+            <div class="box"><div class="segF sec2">f</div></div>
+            <div class="box"></div>
+            <div class="box"><div class="segB sec2">b</div></div>
+
+            <div class="box"><div class="segG sec2">g</div></div>
+
+            <div class="box"><div class="segE sec2">e</div></div>
+            <div class="box"></div>
+            <div class="box"><div class="segC sec2">c</div></div>
+
+            <div class="box"><div class="segD sec2">d</div></div>
+        </div>
+
     </div>
     
+
+    <script>
+        setInterval(() =>
+        {
+            let day = new Date(); 
+            let splitDigits = '';
+
+            let hh = day.getHours(); 
+            hh = hh % 12; 
+            hh = hh ? hh : 12; 
+            splitDigits = hh.toString().split(''); 
+
+            // console.log (`Hour ${hh} : ${splitDigits[0]}, ${splitDigits[1]}`);
+
+            let sevSeg1 = new SevenSegment(".hr1"); 
+            let sevSeg2 = new SevenSegment(".hr2"); 
+
+            
+
+        // ===========================================
+
+            if (splitDigits.length == 1)
+        {
+            splitDigits.unshift(0); 
+            sevSeg1.digitZero(); 
+        }// end if -> splitDigits.length
+
+        if (splitDigits[0] === "0")
+        {
+            sevSeg1.digitZero(); 
+        }
+
+        if (splitDigits[0] === "1")
+        {
+            sevSeg1.digitOne(); 
+        }
+
+        if (splitDigits[0] === "2")
+        {
+            sevSeg1.digitTwo(); 
+        }
+
+        if (splitDigits[0] === "3")
+        {
+            sevSeg1.digitThree(); 
+        }
+
+        if (splitDigits[0] === "4")
+        {
+            sevSeg1.digitFour(); 
+        }
+
+        if (splitDigits[0] === "5")
+        {
+            sevSeg1.digitFive(); 
+        }
+
+        if (splitDigits[0] === "6")
+        {
+            sevSeg1.digitSix(); 
+        }
+
+        if (splitDigits[0] === "7")
+        {
+            sevSeg1.digitSeven(); 
+        }
+
+        if (splitDigits[0] === "8")
+        {
+            sevSeg1.digitEight(); 
+        }
+
+        if (splitDigits[0] === "9")
+        {
+            sevSeg1.digitNine(); 
+        }
+
+// ===========================================
+
+
+        if (splitDigits[1] === "0")
+        {
+            sevSeg2.digitZero(); 
+        }
+
+        if (splitDigits[1] === "1")
+        {
+            sevSeg2.digitOne(); 
+        }
+
+        if (splitDigits[1] === "2")
+        {
+            sevSeg2.digitTwo(); 
+        }
+
+        if (splitDigits[1] === "3")
+        {
+            sevSeg2.digitThree(); 
+        }
+
+        if (splitDigits[1] === "4")
+        {
+            sevSeg2.digitFour(); 
+        }
+
+        if (splitDigits[1] === "5")
+        {
+            sevSeg2.digitFive(); 
+        }
+
+        if (splitDigits[1] === "6")
+        {
+            sevSeg2.digitSix(); 
+        }
+
+        if (splitDigits[1] === "7")
+        {
+            sevSeg2.digitSeven(); 
+        }
+
+        if (splitDigits[1] === "8")
+        {
+            sevSeg2.digitEight(); 
+        }
+
+        if (splitDigits[1] === "9")
+        {
+            sevSeg2.digitNine(); 
+        }
+        
+       
+// ===========================================       
+// ===========================================
+
+        let mm = day.getMinutes(); 
+        splitDigits = mm.toString().split(''); 
+        let sevSegMin1 = new SevenSegment(".mn1"); 
+
+        if (splitDigits.length == 1)
+        {
+            splitDigits.unshift(0); 
+            sevSegMin1.digitZero(); 
+
+        }
+
+        // console.log (`minute : ${splitDigits[0]}, ${splitDigits[1]}`);
+
+
+        if (splitDigits[0] === "0")
+        {
+            sevSegMin1.digitZero(); 
+        }
+
+        if (splitDigits[0] === "1")
+        {
+            sevSegMin1.digitOne(); 
+        }
+
+        if (splitDigits[0] === "2")
+        {
+            sevSegMin1.digitTwo(); 
+        }
+
+        if (splitDigits[0] === "3")
+        {
+            sevSegMin1.digitThree(); 
+        }
+
+        if (splitDigits[0] === "4")
+        {
+            sevSegMin1.digitFour(); 
+        }
+
+        if (splitDigits[0] === "5")
+        {
+            sevSegMin1.digitFive(); 
+        }
+
+        if (splitDigits[0] === "6")
+        {
+            sevSegMin1.digitSix(); 
+        }
+
+        if (splitDigits[0] === "7")
+        {
+            sevSegMin1.digitSeven(); 
+        }
+
+        if (splitDigits[0] === "8")
+        {
+            sevSegMin1.digitEight(); 
+        }
+
+        if (splitDigits[0] === "9")
+        {
+            sevSegMin1.digitNine(); 
+        }
+// ===========================================
+        let sevSegMin2 = new SevenSegment(".mn2"); 
+
+        if (splitDigits[1] === "0")
+        {
+            sevSegMin2.digitZero(); 
+        }
+
+        if (splitDigits[1] === "1")
+        {
+            sevSegMin2.digitOne(); 
+        }
+
+        if (splitDigits[1] === "2")
+        {
+            sevSegMin2.digitTwo(); 
+        }
+
+        if (splitDigits[1] === "3")
+        {
+            sevSegMin2.digitThree(); 
+        }
+
+        if (splitDigits[1] === "4")
+        {
+            sevSegMin2.digitFour(); 
+        }
+
+        if (splitDigits[1] === "5")
+        {
+            sevSegMin2.digitFive(); 
+        }
+
+        if (splitDigits[1] === "6")
+        {
+            sevSegMin2.digitSix(); 
+        }
+
+        if (splitDigits[1] === "7")
+        {
+            sevSegMin2.digitSeven(); 
+        }
+
+        if (splitDigits[1] === "8")
+        {
+            sevSegMin2.digitEight(); 
+        }
+
+        if (splitDigits[1] === "9")
+        {
+            sevSegMin2.digitNine(); 
+        }
+// ===========================================
+// ===========================================
+
+        let ss = day.getSeconds(); 
+
+        splitDigits = ss.toString().split(''); 
+
+        let sevSegSec1 = new SevenSegment(".sec1"); 
+        let sevSegSec2 = new SevenSegment(".sec2"); 
+
+
+        if (splitDigits.length == 1)
+        {
+            splitDigits.unshift(0); 
+
+            sevSegSec1.digitZero(); 
+        }
+        
+        // console.log (`sec : ${splitDigits[0]}, ${splitDigits[1]}`);
+        
+
+        if (splitDigits[0] === "0")
+        {
+            sevSegSec1.digitZero(); 
+        }
+
+        if (splitDigits[0] === "1")
+        {
+            sevSegSec1.digitOne(); 
+        }
+
+        if (splitDigits[0] === "2")
+        {
+            sevSegSec1.digitTwo(); 
+        }
+
+        if (splitDigits[0] === "3")
+        {
+            sevSegSec1.digitThree(); 
+        }
+
+        if (splitDigits[0] === "4")
+        {
+            sevSegSec1.digitFour(); 
+        }
+
+        if (splitDigits[0] === "5")
+        {
+            sevSegSec1.digitFive(); 
+        }
+
+        
+    // ===========================================
+
+        if (splitDigits[1] === "0")
+        {
+            sevSegSec2.digitZero(); 
+        }
+
+        if (splitDigits[1] === "1")
+        {
+            sevSegSec2.digitOne(); 
+
+        }
+
+        if (splitDigits[1] === "2")
+        {
+            sevSegSec2.digitTwo(); 
+
+        }
+
+        if (splitDigits[1] === "3")
+        {
+            sevSegSec2.digitThree(); 
+        }
+
+        if (splitDigits[1] === "4")
+        {
+            sevSegSec2.digitFour(); 
+
+        }
+
+        if (splitDigits[1] === "5")
+        {
+            sevSegSec2.digitFive(); 
+
+        }
+
+        if (splitDigits[1] === "6")
+        {
+            sevSegSec2.digitSix(); 
+        }
+
+        if (splitDigits[1] === "7")
+        {
+            sevSegSec2.digitSeven(); 
+        }
+
+        if (splitDigits[1] === "8")
+        {
+            sevSegSec2.digitEight(); 
+        }
+
+        if (splitDigits[1] === "9")
+        {
+            sevSegSec2.digitNine(); 
+        }
+        
+// ===========================================
+// ===========================================
+
+
+
+        }, 1000)
+    </script>
 
 
 </body>
