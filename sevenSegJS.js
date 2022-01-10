@@ -12,6 +12,8 @@ class SevenSegment
         this.segE = document.querySelector(`.segE${preFix}`); 
         this.segF = document.querySelector(`.segF${preFix}`); 
         this.segG = document.querySelector(`.segG${preFix}`); 
+
+        this.dotAnimation = document.querySelectorAll(`.dot span`); 
     }
     
 
@@ -135,6 +137,25 @@ class SevenSegment
         this.segF.style.backgroundColor = "#f00";         
         this.segG.style.backgroundColor = "#f00";         
     }
+
+    dotAnimationActive()
+    {
+        for (let index = 0; index < this.dotAnimation.length; index++) 
+        {
+            this.dotAnimation[index].style.backgroundColor = "green";
+            
+        }
+    }
+
+    dotAnimationInActive()
+    {
+        for (let index = 0; index < this.dotAnimation.length; index++) 
+        {
+            this.dotAnimation[index].style.backgroundColor = "rgb(133, 133, 133)";
+            
+        }
+    }
+
 
 
 }// end class SevenSegment

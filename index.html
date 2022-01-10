@@ -47,7 +47,10 @@
         </div>
 
         
-       
+        <div class="dot">
+            <span></span>
+            <span></span>
+        </div>
 
         <div class="sevenSeg">
             <div class="box"><div class="segA mn1">a</div></div>
@@ -82,7 +85,10 @@
         </div>
 
 
-        
+        <div class="dot">
+            <span></span>
+            <span></span>
+        </div>
 
 
         <div class="sevenSeg">
@@ -121,6 +127,10 @@
     
 
     <script>
+
+        let dotAnimation = true; 
+
+
         setInterval(() =>
         {
             let day = new Date(); 
@@ -136,7 +146,21 @@
             let sevSeg1 = new SevenSegment(".hr1"); 
             let sevSeg2 = new SevenSegment(".hr2"); 
 
-            
+        // ===========================================
+
+        if (dotAnimation == true)
+        {
+            sevSeg2.dotAnimationActive(); 
+            // console.log(`dot ani : ${dotAnimation}`); 
+            dotAnimation = !dotAnimation; 
+        }
+        else 
+        {
+            sevSeg2.dotAnimationInActive(); 
+            dotAnimation = !dotAnimation; 
+
+        }// end if -> dotAnimation
+
 
         // ===========================================
 
